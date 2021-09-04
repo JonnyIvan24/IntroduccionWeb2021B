@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!-- existen dos tipos principales de acciones GET y POST -->
+    <!-- ruta a donde se enviaran los datos -->
+    <form action="./action.html" method="get">
+        <div>
+            <div>
+                <label for="name">Nombre:</label>
+            </div>
+            <input type="text" name="name" id="name" placeholder="Nombre...">
+        </div>
+
+        <div>
+            <label for="age">Edad:</label><br>
+            <!-- las validaciones "required" del lado del front-end (usuario) no son seguras -->
+            <input type="number" name="age" id="age" min="13" max="50" step="2" required>
+        </div>
+
+        <div>
+            <div>
+                <label for="description">Descripción</label>
+            </div>
+            <!-- el valor por defecto va entre la apertura y el cierre de la etiqueta -->
+            <textarea name="description" id="description" cols="20" rows="5" placeholder="Descripción..."></textarea>
+        </div>
+
+        <br><br>
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+</html>
