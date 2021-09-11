@@ -22,3 +22,7 @@ a:active {
 a[target=_blank] {
     background-color: yellow;
 }
+
+body {
+    background: yellowgreen url(./../../assets/img/walter.jpg) no-repeat right fixed;
+}
