@@ -1,6 +1,6 @@
 
-/* selector descendientes (espacio) */
-div > p {
+/* selector adyacente (+) */
+div + p {
     background-color: yellow;
 }
 
