@@ -1,6 +1,6 @@
 
-/* selector adyacente (+) */
-div + p {
+/* selector adyacente (~) */
+div ~ p {
     background-color: yellow;
 }
 
