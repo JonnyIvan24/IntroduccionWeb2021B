@@ -17,3 +17,8 @@ a:hover {
 a:active {
     color: purple;
 }
+
+/* selector de atributos */
+a[target=_blank] {
+    background-color: yellow;
+}
