@@ -30,12 +30,12 @@
         // array que es el arreglo original que se esta iterando
         const arreglo = [45, 5, 0, 30, 26, 7]
 
-        // funcion de flecha (arrow function) es igual que la anonima solo que  sin la palabra reserva function
-        // y entre los parentesis y el bloque lleva la flecha "=>"
-        // ejemplo Array.foreach()
-        arreglo.forEach((value, index, array) => {
+        arreglo.forEach(miIterador);
+
+        // funcion comun - se declara y se puede utilizar en otras partes del código
+        function miIterador (value, index, array) {
             console.log('El valor del indice ' + index + ' es: ' + value)
-        });
+        }
     </script>
 </body>
 </html>
