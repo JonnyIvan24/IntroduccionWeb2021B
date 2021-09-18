@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <input type="text" id="unico">
+    <p name="w">Walter</p>
+    <p>Withe</p>
+    <h1 class="clase">Hola</h1>
+    <h1 class="clase">Mundo</h1>
+
+    <script>
+        const porID = document.getElementById('unico');         // retorna objeto
+        const porTag = document.getElementsByTagName('p');      // retorna coleccion
+        const porName = document.getElementsByName('w');        // retorna coleccion
+        const porClase = document.getElementsByClassName('clase'); // retorna coleccion
+
+        console.log(porTag);
+        console.log(porName);
+        console.log(porClase);
+        console.log(porID);
+        
+        // podemos acceder a todas las propiedades de los elmentos html
+        porID.value = 1;
+        console.log(porID.value);
+        console.log(porTag[0].innerText = 'Juan');
+    </script>
+</body>
+</html>
