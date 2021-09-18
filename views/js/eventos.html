@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos en JS</title>
+</head>
+<body>
+    <!-- onchange -->
+    <div>
+        <input type="text" id="edad" name="edad" onchange="validacion()" placeholder="Edad...">
+        <small id="edad_error" style="color: red;"></small>
+    </div>
+
+    <!-- onkeyup -->
+    <div>
+        <input type="text" id="original" onkeyup="duplicarTexto()">
+        <input type="text" id="copia">
+    </div>
+
+    <!-- onclick -->
+    <button onclick="insertarFecha()">Fecha y hora</button>
+    <p id="demo"></p>
+
+    <div 
+        onmouseover="mOver(this)"
+        onmouseout="mOut(this)"
+        style="background-color: red; width: 120px; height: 20; padding: 0px; margin: 20px;"
+    >
+        Doom
+    </div>
+
+
+    <script>
+        function insertarFecha() {
+            document.getElementById('demo').innerHTML = Date()
+        }
+
+        function duplicarTexto() {
+            const valor = document.getElementById('original').value;
+            document.getElementById('copia').value = valor;
+        }
+
+        function validacion() {
+            const edad = Number(document.getElementById('edad').value);
+            const elemento = document.getElementById('edad_error');
+
+            if (edad < 0 || edad > 110) {
+                elemento.innerHTML = 'Edad invalida'
+            } else {
+                elemento.innerHTML = ''
+            }
+        }
+
+        function mOver(obj) {
+            obj.innerHTML = "Slayer";
+        }
+
+        function mOut(obj) {
+            obj.innerHTML = "Doom";
+        }
+
+    </script>
+</body>
+</html>
