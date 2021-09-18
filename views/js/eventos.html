@@ -20,9 +20,10 @@
     </div>
 
     <!-- onclick -->
-    <button onclick="insertarFecha()">Fecha y hora</button>
+    <button id="btn">Fecha y hora</button>
     <p id="demo"></p>
 
+    <!-- onmouse - over - out -->
     <div 
         onmouseover="mOver(this)"
         onmouseout="mOut(this)"
@@ -33,6 +34,13 @@
 
 
     <script>
+        const btn = document.getElementById('btn');
+        const demo = document.getElementById('demo');
+
+        btn.addEventListener("click", ()=> {
+            demo.innerText = Date()
+        })
+
         function insertarFecha() {
             document.getElementById('demo').innerHTML = Date()
         }
