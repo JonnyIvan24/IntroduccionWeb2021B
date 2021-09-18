@@ -1,11 +1,11 @@
 /* link no visitado */
 a:link {
-    color: red
+    color: darkred
 }
 
 /* link visitado */
 a:visited {
-    color: green;
+    color: dimgray;
 }
 
 /* pasar crusor */
@@ -20,9 +20,9 @@ a:active {
 
 /* selector de atributos */
 a[target=_blank] {
-    background-color: yellow;
+    background-color: rgb(92, 92, 15);
 }
 
 body {
-    background: yellowgreen url(./../../assets/img/walter.jpg) no-repeat right fixed;
+    background: green url(./../../assets/img/walter.jpg) no-repeat right fixed;
 }
